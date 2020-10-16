@@ -4,6 +4,14 @@ spring:
     username: root
     password: 123456
     url: jdbc:mysql://62.234.154.66:3307/gulimall_coupon?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: gulimall-coupon
 
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
