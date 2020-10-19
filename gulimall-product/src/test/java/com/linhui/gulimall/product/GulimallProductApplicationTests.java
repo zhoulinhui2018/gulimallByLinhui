@@ -21,8 +21,8 @@ class GulimallProductApplicationTests {
         brandEntity.setName("华为");
         brandEntity.setBrandId(1L);
         brandEntity.setLogo("logo");
-        brandService.updateById(brandEntity);
-        System.out.println("更新成功");
+        brandService.save(brandEntity);
+        System.out.println("保存成功");
     }
 
     @Test
